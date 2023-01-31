@@ -10,3 +10,8 @@ print(word_list)
 word = random.choice(word_list)
 
 print(word)
+
+## asking user for input
+
+guess = input('Enter a character: ')
+

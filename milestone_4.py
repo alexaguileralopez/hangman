@@ -7,7 +7,7 @@ class Hangman():
         #attributes
         self.word_list = ["apple", "orange", "banana", "pear", "strawberry"]
         self.list_of_guesses = []
-        self.word = random.choice(word_list)
+        self.word = random.choice(self.word_list)
         self.word_guessed = [None] * len(self.word)
 
         self.num_letters = len(self.word)

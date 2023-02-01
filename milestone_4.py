@@ -11,9 +11,7 @@ class Hangman():
         self.list_of_guesses = [None]
         self.word = random.choice(word_list)
         self.word_guessed = ['_'] * len(self.word)
-
-        self.num_letters = len(self.word)
-
+        self.num_letters = len(set(self.word))
         self.num_lives = num_lives
 
 

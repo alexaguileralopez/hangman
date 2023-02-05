@@ -7,8 +7,6 @@ class Hangman():
     
     def __init__(self, word_list = word_list, num_lives=5): #the number of lives is set to a default value of 5
        
-       # There is some problem, as various of the defined attributes are not recognised in the methods
-       # that are defined afterwards
 
         #attributes
         self.word_list = word_list
@@ -18,6 +16,8 @@ class Hangman():
         self.word_guessed = ['_'] * len(self.word)
         self.num_letters = len(set(self.word))
 
+    #the check_guess method checks if the guess is in the word or not. Then, it appends the "list of guesses"
+    # attribute list with the guess that was taken
         
     def check_guess(self, guess):
         guess = guess.lower()
@@ -39,6 +39,8 @@ class Hangman():
         self.list_of_guesses.append(guess)
         return
 
+    # this method asks the user for input and checks if the input given is valid or not
+    # if it is valid, it leads the program into the check_guess method
     def ask_for_input(self):
         while True:
             guess= input("Guess a letter: ")
@@ -53,9 +55,7 @@ class Hangman():
                 
                 break 
                 
-        #return
-        
-        
+              
 
 game1 = Hangman()
 

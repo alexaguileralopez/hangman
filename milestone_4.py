@@ -31,10 +31,10 @@ class Hangman():
 
             if len(user_input) != 1 or user_input.isalpha() != True:
                 print("Invalid letter. Please, enter a single alphabetical character.")
-            elif user_input in self.list_of_guesses: # does not recognise list_of_guesses frmo the init method
+            elif user_input in self.list_of_guesses:
                 print("You already tried that letter!")
             else: 
-                self.check_guess(user_input) # does not recognise check_guess from the method defined just before
+                self.check_guess(user_input) 
                 break
         #return
         
@@ -43,6 +43,7 @@ class Hangman():
 game1 = Hangman()
 
 game1.ask_for_input()
+
             
         
 

@@ -22,7 +22,7 @@ class Hangman():
     def check_guess(self, guess):
         guess = guess.lower()
         if guess in self.word: #at the moment, it does not recognise word from the init method
-            print("Good guess,", guess, "is in the word.")
+            print("Good guess!", guess, "is in the word.")
         return
 
     def ask_for_input(self):

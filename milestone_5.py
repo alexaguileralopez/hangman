@@ -6,7 +6,7 @@ class Hangman():
     word_list = ["apple", "orange", "banana", "pear", "strawberry"]
     
     def __init__(self, word_list = word_list, num_lives=5): #the number of lives is set to a default value of 5
-       
+    
 
         #attributes
         self.word_list = word_list
@@ -59,8 +59,8 @@ class Hangman():
 
 def play_game(word_list):
     num_lives = 5
-    game = Hangman()
-    game(word_list,num_lives)
+    game = Hangman(word_list, num_lives)
+    #game(word_list, num_lives)
 
     while True:
         if num_lives == 0:

@@ -5,8 +5,8 @@ class Hangman():
 
     word_list = ["apple", "orange", "banana", "pear", "strawberry"]
     
-    def __init__(self, word_list = word_list, num_lives=5): #the number of lives is set to a default value of 5
-       
+    #def __init__(self, word_list = word_list, num_lives=5): #the number of lives is set to a default value of 5
+    def __init__(self, word_list = word_list, num_lives=5):   
 
         #attributes
         self.word_list = word_list

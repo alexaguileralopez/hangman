@@ -27,15 +27,16 @@ class Hangman():
 
     def ask_for_input(self):
         while True:
-            user_input= input("Enter a character: ")
-            if len(user_input) != 1 or user_input.isalpha() == False:
-                print("Please, enter a single alphabetical character")
+            user_input= input("Guess a letter: ")
+
+            if len(user_input) != 1 or user_input.isalpha() != True:
+                print("Invalid letter. Please, enter a single alphabetical character.")
             elif user_input in self.list_of_guesses: # does not recognise list_of_guesses frmo the init method
                 print("You already tried that letter!")
             else: 
                 self.check_guess(user_input) # does not recognise check_guess from the method defined just before
-                break
-        return
+                #break
+        #return
         
         
 

@@ -35,7 +35,7 @@ class Hangman():
                 print("You already tried that letter!")
             else: 
                 self.check_guess(user_input) # does not recognise check_guess from the method defined just before
-                #break
+                break
         #return
         
         
